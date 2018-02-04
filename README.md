@@ -27,7 +27,7 @@ The `keychainKeys` are used to store your session in Keychain. If no value is pr
 
 _Note: Be sure to maintain a reference to this manager at least throughout the complete authentication process. If you see a `"Your App" Wants to Use "X Service" to Sign In` alert that immediately disappears, not maintaining this reference is probably your issue._
 
-To authenticate, simply call `authenticat(callback:)` with your manager. You'll receive the session after successful authentication. This same method handles storing the current auth session securely in Keychain.
+To authenticate, simply call `authenticate(callback:)` with your manager. You'll receive the session after successful authentication. This same method handles storing the current auth session securely in Keychain.
 
 ```swift
 tokenManager.authenticate { [weak self] session, error in
