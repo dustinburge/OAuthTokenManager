@@ -2,6 +2,8 @@
 
 `OAuthTokenManager` is a simple, opinionated way to handle authentication and token management with Swift and Apple's Keychain. It uses a bit of [SwiftKeychainWrapper](https://github.com/jrendel/SwiftKeychainWrapper) to handle communicating with the Keychain and begins the authentication flow with [SFAuthenticationSession](https://developer.apple.com/documentation/safariservices/sfauthenticationsession).
 
+This manager works only with the OAuth [Code Grant Flow](https://tools.ietf.org/html/rfc6749#section-4.1).
+
 ## Installation
 
 Just add `OAuthTokenManager.swift`, `KeychainWrapper.swift`, and  `KeychainItemAccessibility.swift` to your Xcode project.
